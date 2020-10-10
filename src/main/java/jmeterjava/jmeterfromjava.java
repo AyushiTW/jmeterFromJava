@@ -23,7 +23,7 @@ import org.apache.jmeter.threads.gui.ThreadGroupGui;
 import org.apache.jmeter.util.JMeterUtils;
 import org.apache.jorphan.collections.HashTree;
 
-public class jmeterfromjava {
+public class JmeterFromJava {
 
 	public static void main(String[] args) {
 
