@@ -20,7 +20,7 @@ public class JmeterFromJmxFile {
         String slash = System.getProperty("file.separator");
         
         // JMeter .jmx file
-        File testPlan = new File("report/jmeter_api_sample.jmx");
+        File testPlan = new File("report/lifeCharger.jmx");
         
         if (jmeterHome.exists()) {
         	if (testPlan.exists()) {
