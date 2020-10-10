@@ -50,7 +50,7 @@ public class JmeterFromJava {
         		sampler.setPort(443);
         		sampler.setPath("/cart.html");
         		sampler.setMethod("GET");
-        		sampler.setName("Open demoblaze from jmeter");
+        		sampler.setName("Open demoblaze from jmeter java code");
         		sampler.setProperty(TestElement.TEST_CLASS, HTTPSamplerProxy.class.getName());
         		sampler.setProperty(TestElement.GUI_CLASS, HttpTestSampleGui.class.getName());      		
         		
