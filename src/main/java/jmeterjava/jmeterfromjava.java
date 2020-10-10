@@ -23,9 +23,9 @@ import org.apache.jmeter.threads.gui.ThreadGroupGui;
 import org.apache.jmeter.util.JMeterUtils;
 import org.apache.jorphan.collections.HashTree;
 
-public class JmeterFromJava {
+public class JMeterFromJava {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException, IOException {
 
 		//Set jmeter home for the jmeter utils to load
         File jmeterHome = new File("/Users/techops/Documents/Applications/apache-jmeter-5.3");
@@ -83,13 +83,7 @@ public class JmeterFromJava {
         		HashTree threadGroupHashTree = testPlanTree.add(testPlan, threadGroup).add(sampler);      		
         		
         		// Save generated test plan to Jmeter's.jmx file format
-        		try {
-					SaveService.saveTree(testPlanTree, new FileOutputStream("report/jmeter_api_sample.jmx"));
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+        		SaveService.saveTree(testPlanTree, new FileOutputStream("report/jmeter_api_sample.jmx"));	
         		
         		//add Summarizer output to get progress
         		Summariser summary = null;
